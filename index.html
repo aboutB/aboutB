@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부산박물관</title>
+
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Montaga&family=Nanum+Gothic&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/common.css"> <!-- header,footer -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 사이트맵+모바일 영역 시작 -->
+        <!-- 사이트맵 시작 -->
+        <div class="all_wrap">
+            <div class="all_wrap_logo"></div>
+            <ul class="all_gnb">
+                <li>
+                    <a href="sub/info.html">이용안내</a>
+                    <ul class="all_depth2">
+                        <li><a href="#">관람안내</a></li>
+                        <li><a href="#">관람예약</a></li>
+                        <li><a href="#">시설안내</a>
+                            <ul class="sub_depth2">
+                                <li><a href="#">동래관</a></li>
+                                <li><a href="#">부산관</a></li>
+                                <li><a href="#">야외전시</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">시설대관</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">질문과 답변</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">전시안내</a>
+                    <ul class="all_depth2">
+                        <li><a href="#">전시관 명칭 유래</a></li>
+                        <li><a href="#">상설전시관</a>
+                            <ul class="sub_depth2">
+                                <li><a href="#">동래관</a></li>
+                                <li><a href="#">부산관</a></li>
+                                <li><a href="#">야외전시</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">특별전시관</a></li>
+                        <li><a href="#">랜선전시관</a>
+                            <ul class="sub_depth2">
+                                <li><a href="#">온라인으로 즐기는 박물관</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">단체 전시해설</a>
+                            <ul class="sub_depth2">
+                                <li><a href="#">접수</a></li>
+                                <li><a href="#">신청확인/취소</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">교육&middot;행사</a>
+                    <ul class="all_depth2">
+                        <li><a href="#l">프로그램안내</a></li>
+                        <li><a href="#l">월간행사</a>
+                            <ul class="sub_depth2">
+                                <li><a href="#">부산박물관 월간행사</a></li>
+                                <li><a href="#">동삼동패총전시관 월간행사</a></li>
+                                <li><a href="#">복천박물관 월간행사</a></li>
+                                <li><a href="#">정관박물관 월간행사</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">교육신청/확인</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">소장품</a>
+                    <ul class="all_depth2">
+                        <li><a href="#">소장품 검색</a></li>
+                        <li><a href="#">중요 소장품</a></li>
+                        <li><a href="#">소장유물도록</a></li>
+                        <li><a href="#">유물 스토리텔링</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">열린광장</a>
+                    <ul class="all_depth2">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">자료실</a></li>
+                        <li><a href="#">소식지</a></li>
+                        <li><a href="#">메일링 서비스</a></li>
+                        <li><a href="#">부산박물관에 바란다</a></li>
+                        <li><a href="#">관련사이트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">학술연구활동</a>
+                    <ul class="all_depth2">
+                        <li><a href="#">유적조사</a></li>
+                        <li><a href="#">도서발간</a></li>
+                        <li><a href="#">발굴조사 보고서</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">박물관소개</a>
+                    <ul class="all_depth2">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">박물관 활동</a></li>
+                        <li><a href="#">조직 및 업무</a></li>
+                        <li><a href="#">관련 법령</a>
+                            <ul class="sub_depth2">
+                                <li><a href="#">부산광역시립박물관 운영조례&middot;규칙</a></li>
+                                <li><a href="#">박물관 CCTV 설치운영 규정</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="all_side_link">
+                <p>관람문의 <span>051.610.7111</span></p>
+                <p>휠체어&middot;유모차 기타편의시설문의 <span>051.610.7150</span></p>
+            </div>
+            <div class="all_close">
+                <i class="bi bi-x-lg" aria-label="사이트맵 닫기"></i>
+            </div>
+        </div><!-- all_wrap -->
+        <!-- 사이트맵 종료 -->
+        <!-- 모바일 gnb 시작 -->
+        <div class="mgnb_wrap">
+            <ul class="m_gnb">
+                <li><a href="#">이용안내</a>
+                    <ul class="m_depth2">
+                        <li><a href="#">관람안내</a></li>
+                        <li><a href="#">관람예약</a></li>
+                        <li><a href="#">시설안내</a>
+                            <ul class="msub_depth2">
+                                <li><a href="#">동래관</a></li>
+                                <li><a href="#">부산관</a></li>
+                                <li><a href="#">야외전시</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">시설대관</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">질문과 답변</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">전시안내</a>
+                    <ul class="m_depth2">
+                        <li><a href="#">전시관 명칭 유래</a></li>
+                        <li><a href="#">상설전시관</a>
+                            <ul class="msub_depth2">
+                                <li><a href="#">동래관</a></li>
+                                <li><a href="#">부산관</a></li>
+                                <li><a href="#">야외전시</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">특별전시관</a></li>
+                        <li><a href="#">랜선전시관</a>
+                            <ul class="msub_depth2">
+                                <li><a href="#">온라인으로 즐기는 박물관</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">단체 전시해설</a>
+                            <ul class="msub_depth2">
+                                <li><a href="#">접수</a></li>
+                                <li><a href="#">신청확인/취소</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">교육&middot;행사</a>
+                    <ul class="m_depth2">
+                        <li><a href="#l">프로그램안내</a></li>
+                        <li><a href="#l">월간행사</a>
+                            <ul class="msub_depth2">
+                                <li><a href="#">부산박물관 월간행사</a></li>
+                                <li><a href="#">동삼동패총전시관 월간행사</a></li>
+                                <li><a href="#">복천박물관 월간행사</a></li>
+                                <li><a href="#">정관박물관 월간행사</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">교육신청/확인</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">소장품</a>
+                    <ul class="m_depth2">
+                        <li><a href="#">소장품 검색</a></li>
+                        <li><a href="#">중요 소장품</a></li>
+                        <li><a href="#">소장유물도록</a></li>
+                        <li><a href="#">유물 스토리텔링</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">열린광장</a>
+                    <ul class="m_depth2">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">자료실</a></li>
+                        <li><a href="#">소식지</a></li>
+                        <li><a href="#">메일링 서비스</a></li>
+                        <li><a href="#">부산박물관에 바란다</a></li>
+                        <li><a href="#">관련사이트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">학술연구활동</a>
+                    <ul class="m_depth2">
+                        <li><a href="#">유적조사</a></li>
+                        <li><a href="#">도서발간</a></li>
+                        <li><a href="#">발굴조사 보고서</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">박물관소개</a>
+                    <ul class="m_depth2">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">박물관 활동</a></li>
+                        <li><a href="#">조직 및 업무</a></li>
+                        <li><a href="#">관련 법령</a>
+                            <ul class="msub_depth2">
+                                <li><a href="#">부산광역시립박물관 운영조례&middot;규칙</a></li>
+                                <li><a href="#">박물관 CCTV 설치운영 규정</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul><!-- m_gnb -->
+            <div class="mgnb_close">
+                <i class="bi bi-x-lg" aria-label="사이트맵 닫기"></i>
+            </div>
+        </div><!-- mgnb_wrap -->
+        <!-- 모바일 gnb 종료 -->
+        <!-- 사이트맵+모바일 영역 종료 -->
+
+        <header id="header">
+            <div class="inner">
+                <h1><a href="#"><img src="images/common/logo.svg" alt="부산박물관"></a></h1>
+
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#menu1">이용안내</a>
+                            <div class="depth2_wrap bg1">
+                                <span>이용안내</span>
+                                <ul class="depth2">
+                                    <li><a href="sub/info.html">관람안내</a></li>
+                                    <li><a href="#">관람예약</a></li>
+                                    <li><a href="#">시설안내</a>
+                                        <ul class="to_depth2">
+                                            <li><a href="#">동래관</a></li>
+                                            <li><a href="#">부산관</a></li>
+                                            <li><a href="#">야외전시</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">시설대관</a></li>
+                                    <li><a href="#">찾아오시는 길</a></li>
+                                    <li><a href="#">질문과 답변</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#menu2">전시안내</a>
+                            <div class="depth2_wrap bg2">
+                                <span>전시안내</span>
+                                <ul class="depth2">
+                                    <li><a href="#">전시관 명칭 유래</a></li>
+                                    <li><a href="#">상설전시관</a>
+                                        <ul class="to_depth2">
+                                            <li><a href="#">동래관</a></li>
+                                            <li><a href="#">부산관</a></li>
+                                            <li><a href="#">야외전시</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">특별전시관</a></li>
+                                    <li><a href="#">랜선전시관</a>
+                                        <ul class="to_depth2">
+                                            <li><a href="#">온라인으로 즐기는 박물관</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">단체 전시해설</a>
+                                        <ul class="to_depth2">
+                                            <li><a href="#">접수</a></li>
+                                            <li><a href="#">신청확인/취소</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#menu3">교육/행사</a>
+                            <div class="depth2_wrap bg3">
+                                <span>교육/행사</span>
+                                <ul class="depth2">
+                                    <li><a href="#">프로그램 안내</a></li>
+                                    <li><a href="#">월간행사</a>
+                                        <ul class="to_depth2">
+                                            <li><a href="#">부산박물관 월간행사</a></li>
+                                            <li><a href="#">동삼동패총전시관 월간행사</a></li>
+                                            <li><a href="#">복천박물관 월간행사</a></li>
+                                            <li><a href="#">정관박물관 월간행사</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">교육신청/확인</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#menu4">소장품</a>
+                            <div class="depth2_wrap bg4">
+                                <span>소장품</span>
+                                <ul class="depth2">
+                                    <li><a href="#">소장품 검색</a></li>
+                                    <li><a href="#">중요 소장품</a></li>
+                                    <li><a href="#">소장유물도록</a></li>
+                                    <li><a href="#">유물 스토리텔링</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#menu5">열린광장</a>
+                            <div class="depth2_wrap bg5">
+                                <span>열린광장</span>
+                                <ul class="depth2">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">보도자료</a></li>
+                                    <li><a href="#">자료실</a></li>
+                                    <li><a href="#">소식지</a></li>
+                                    <li><a href="#">메일링 서비스</a></li>
+                                    <li><a href="#">부산박물관에 바란다</a></li>
+                                    <li><a href="#">관련사이트</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#menu6">학술연구활동</a>
+                            <div class="depth2_wrap bg6">
+                                <span>학술연구활동</span>
+                                <ul class="depth2">
+                                    <li><a href="#">유적 조사</a></li>
+                                    <li><a href="#">도서 발간</a></li>
+                                    <li><a href="#">발굴조사 보고서</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#menu7">박물관소개</a>
+                            <div class="depth2_wrap bg7">
+                                <span>박물관소개</span>
+                                <ul class="depth2">
+                                    <li><a href="#">인사말</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">박물관 활동</a></li>
+                                    <li><a href="#">조직 및 업무</a></li>
+                                    <li><a href="#">관련 법령</a>
+                                        <ul class="to_depth2">
+                                            <li><a href="#">부산광역시립박물관 운영조례&middot;규칙</a></li>
+                                            <li><a href="#">박물관 CCTV 설치운영 규정</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="util">
+                    <li><a href="#"><i class="bi bi-person"></i></a></li>
+                    <li class="btn_sitemap"><i class="bi bi-list"></i></li>
+                </ul>
+            </div>
+            <div class="depth2_bg"></div>
+        </header>
+
+        <!-- <main id="main">
+            <video id="mv" src="images/mv_video.mp4" autoplay muted loop playsinline data-autoplay></video>
+        </main> -->
+
+        <div id="fullpage">
+
+            <div section data-menuanchor="menu1" id="mv" class="section">
+                <div class="mv_txt">
+                    <video autoplay muted loop playsinline data-autoplay src="images/mv_video.mp4"></video>
+                </div><!-- mv_txt -->
+                <div class="scroll">
+                    <span class="stroke"></span>
+                    <span class="ball"></span>
+                    <span>SCROLL</span>
+                </div><!-- scroll -->
+            </div><!-- #mv -->
+
+            <div section data-menuanchor="menu2" id="program" class="section">
+                <div class="inner">
+                    <div class="pro_txt" data-aos="fade-down" data-aos-duration="1500">
+                        <h2>전시 및 행사</h2>
+                    </div><!-- pro_txt -->
+                    <div class="pro_control" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="swiper pro_slide" data-aos="fade-right" data-aos-duration="1500">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <img src="images/main/program_01.jpg" alt="전시안내사진">
+                                    <ul class="slide_txt">
+                                        <li class="txt_h3">2024년 테마전</li>
+                                        <li class="txt_h2">「1674 곤여전도-신비한 세계여행」</li>
+                                        <li>기간 : 2024-08-06  ~  2024-09-08 (진행전시) <br>
+                                            장소 : 부산박물관 부산관 기획전시실</li>
+                                        <div class="btn_more">
+                                            <svg height="50" width="120">
+                                                <rect height="50" width="120"></rect>
+                                            </svg>
+                                            <a href="#">자세히보기</a>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="images/main/program_02.jpg" alt="전시안내사진">
+                                    <ul class="slide_txt">
+                                        <li class="txt_h3">2024년 특별기획전</li>
+                                        <li class="txt_h2">수집가 <span>傳</span> : 수집의 즐거움 공감의 기쁨</li>
+                                        <li>기간 : 2024-04-26  ~  2024-07-07 (진행전시) <br>
+                                            장소 : 부산박물관 부산관 기획전시실</li>
+                                        <div class="btn_more">
+                                            <svg height="50" width="120">
+                                                <rect height="50" width="120"></rect>
+                                            </svg>
+                                            <a href="#">자세히보기</a>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="images/main/program_03.jpg" alt="전시안내사진">
+                                    <ul class="slide_txt">
+                                        <li class="txt_h3">2024년 갑진년 청룡의 해 맞이 띠전시</li>
+                                        <li class="txt_h2">「상상 속 동물, 용 <span>龍</span>」</li>
+                                        <li>기간 : 2024-02-06 ~ 2024-03-31 (과거전시) <br>
+                                            장소 : 부산박물관 기증전시실</li>
+                                        <div class="btn_more">
+                                            <svg height="50" width="120">
+                                                <rect height="50" width="120"></rect>
+                                            </svg>
+                                            <a href="#">자세히보기</a>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="images/main/program_01.jpg" alt="전시안내사진">
+                                    <ul class="slide_txt">
+                                        <li class="txt_h3">2024년 테마전</li>
+                                        <li class="txt_h2">「1674 곤여전도-신비한 세계여행」</li>
+                                        <li>기간 : 2024-08-06  ~  2024-09-08 (진행전시) <br>
+                                            장소 : 부산박물관 부산관 기획전시실</li>
+                                        <div class="btn_more">
+                                            <svg height="50" width="120">
+                                                <rect height="50" width="120"></rect>
+                                            </svg>
+                                            <a href="#">자세히보기</a>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="images/main/program_02.jpg" alt="전시안내사진">
+                                    <ul class="slide_txt">
+                                        <li class="txt_h3">2024년 특별기획전</li>
+                                        <li class="txt_h2">수집가 <span>傳</span> : 수집의 즐거움 공감의 기쁨</li>
+                                        <li>기간 : 2024-04-26  ~  2024-07-07 (진행전시) <br>
+                                            장소 : 부산박물관 부산관 기획전시실</li>
+                                        <div class="btn_more">
+                                            <svg height="50" width="120">
+                                                <rect height="50" width="120"></rect>
+                                            </svg>
+                                            <a href="#">자세히보기</a>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="images/main/program_03.jpg" alt="전시안내사진">
+                                    <ul class="slide_txt">
+                                        <li class="txt_h3">2024년 갑진년 청룡의 해 맞이 띠전시</li>
+                                        <li class="txt_h2">「상상 속 동물, 용ㅁ<span>龍</span>」</li>
+                                        <li>기간 : 2024-02-06 ~ 2024-03-31 (과거전시) <br>
+                                            장소 : 부산박물관 기증전시실</li>
+                                        <div class="btn_more">
+                                            <svg height="50" width="120">
+                                                <rect height="50" width="120"></rect>
+                                            </svg>
+                                            <a href="#">자세히보기</a>
+                                        </div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <!-- <div class="swiper-scrollbar"></div> -->
+
+                    </div><!-- pro_control -->
+
+
+                </div><!-- inner -->
+            </div><!-- #program -->
+
+            <div section data-menuanchor="menu3" id="exhibit" class="section">
+                <div class="inner">
+                    <div class="ex_top">
+                        <div class="ex_txt" data-aos="fade-down" data-aos-duration="1000">
+                            <p>상설전시</p>
+                            <h2>주요 소장품</h2>
+                        </div><!-- ex_txt -->
+                        <div class="swiper ex_slide" data-aos="fade-left" data-aos-duration="1000">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide ex1">
+                                    <img src="images/main/exhibit_01.jpg" alt="금동보살입상">
+                                    <dl class="over">
+                                        <dt>국보 금동보살입상</dt>
+                                        <dd><a href="#">더보기</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="swiper-slide ex2">
+                                    <img src="images/main/exhibit_02.jpg" alt="금동보살입상">
+                                    <dl class="over">
+                                        <dt>제181호 백자청화운룡문호</dt>
+                                        <dd> <a href="#">더보기</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="swiper-slide ex3">
+                                    <img src="images/main/exhibit_03.jpg" alt="금동보살입상">
+                                    <dl class="over">
+                                        <dt>제181호 백자청화운룡문호</dt>
+                                        <dd> <a href="#">더보기</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="swiper-slide ex4">
+                                    <img src="images/main/exhibit_04.jpg" alt="금동보살입상">
+                                    <dl class="over">
+                                        <dt>제181호 백자청화운룡문호</dt>
+                                        <dd> <a href="#">더보기</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="swiper-slide ex1">
+                                    <img src="images/main/exhibit_01.jpg" alt="금동보살입상">
+                                    <dl class="over">
+                                        <dt>국보 금동보살입상</dt>
+                                        <dd><a href="#">더보기</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="swiper-slide ex2">
+                                    <img src="images/main/exhibit_02.jpg" alt="금동보살입상">
+                                    <dl class="over">
+                                        <dt>제181호 백자청화운룡문호</dt>
+                                        <dd> <a href="#">더보기</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="swiper-slide ex3">
+                                    <img src="images/main/exhibit_03.jpg" alt="금동보살입상">
+                                    <dl class="over">
+                                        <dt>제181호 백자청화운룡문호</dt>
+                                        <dd> <a href="#">더보기</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="swiper-slide ex4">
+                                    <img src="images/main/exhibit_04.jpg" alt="금동보살입상">
+                                    <dl class="over">
+                                        <dt>제181호 백자청화운룡문호</dt>
+                                        <dd> <a href="#">더보기</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div><!-- ex_slide -->
+                        <div class="ex_control" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                            <div class="ex_nav">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div><!-- ex_nav -->
+                            <div class="ex_stop">
+                                <i class="bi bi-pause-circle pause" aria-label="슬라이드 일시정지"></i>
+                                <i class="bi bi-play-circle play" aria-label="슬라이드 자동재생"></i>
+                            </div>
+
+
+                        </div><!-- ex_control -->
+
+                    </div><!-- ex_top -->
+                    <div class="ex_bottom" data-aos="fade-up" data-aos-duration="1000">
+                        <ul class="ex_bottom_txt">
+                            <li>동래관<br>
+                                <a href="#">바로가기</a>
+                            </li>
+                            <li>부산관<br><a href="#">바로가기</a></li>
+                            <li>야외전시<br><a href="#">바로가기</a></li>
+                            <li>문화체험관<br><a href="#">바로가기</a></li>
+                        </ul>
+                    </div>
+                    </ul>
+                </div><!-- inner -->
+            </div><!-- #exhibit -->
+
+            <div section data-menuanchor="menu4" id="info" class="section fp-auto-height">
+                <div class="bg"></div>
+                <div class="inner">
+                    <div class="info_top">
+                        <div class="news_tab">
+                            <h3>공지사항 <a href="#">더보기</a></h3>
+                            <div class="swiper news">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><a href="#">
+                                            [공지] 2024년 유아단체 대상
+                                            <박물관 요미조미> 신청안내
+                                                <span>2024.06.11</span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide"><a href="#">
+                                            [공지] 2024년 <주말엔 박물관> "나는 문화유산 의사" 운영 안내
+                                                <span>2024.03.08</span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide"><a href="#">
+                                            [공지] 6월 <문화가 있는 날>
+                                                공연 안내
+                                                <span>2024.06.25</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div><!-- swiper news -->
+                        </div><!-- news_tab -->
+                    </div>
+                    <div class="info_bottom">
+                        <h2>이용안내</h2>
+                        <div class="bottom_txt">
+                            <div class="info_view">
+                                <img src="images/main/icon_view.png" alt="">
+                                <h4>관람안내</h4>
+                                <dl>
+                                    <dt>문의 <span>051.610.7111</span></dt>
+                                    <dd>관람료 및 주차료 무료입니다.</dd>
+                                    <dd>단체는 관람예약이 필요합니다.</dd>
+                                </dl>
+                                <a href="#">시설대관안내</a>
+                                <a href="#">단체관람예약</a>
+                            </div>
+                            <div class="info_time">
+                                <img src="images/main/icon_time.png" alt="">
+                                <h4>개관시간</h4>
+                                <dl>
+                                    <dt>이용시간 <span>09:00~18:00</span> <br>
+                                        입장시간 <span>09:00~17:00</span></dt>
+                                    <dd>휴관일 매주 월요일, 1월 1일</dd>
+                                    <dd>월요일이 공휴일인 경우 다음날 휴관</dd>
+                                </dl>
+
+                            </div>
+                            <div class="info_additional">
+                                <img src="images/main/icon_additional.png" alt="">
+                                <h4>편의시설</h4>
+                                <dl>
+                                    <dt>이용문의 <span>051.610.7150</span>
+                                    </dt>
+                                    <dd>휠체어, 유모차가 준비되어 있습니다.</dd>
+                                    <dd>휠체어: 3대, 유모차 3대</dd>
+                                </dl>
+                                <a href="#">모바일 앱 안내</a>
+                            </div>
+                            <div class="info_search">
+                                <ul>
+                                    <li class="info_search_top">
+                                        <img src="images/main/icon_search.png" alt="">
+                                        <h4>소장품검색</h4>
+                                        <a href="#">찾아보기</a>
+                                    </li>
+                                    <li class="info_search_bottom">
+                                        <img src="images/main/icon_map.png" alt="">
+                                        <h4>오시는길</h4>
+                                        <a href="#">약도보기</a>
+                                    </li>
+                                </ul>
+                            </div><!-- info_search -->
+                        </div><!-- bottom_txt -->
+                    </div><!-- info_bottom -->
+                </div><!-- inner -->
+            </div><!-- #info -->
+
+            <footer id="footer" class="section fp-auto-height">
+                <div class="inner">
+                    <div class="footer_top">
+                        <ul class="link">
+                            <li><a href="#">약관</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                            <li><a href="#">행정서비스헌장</a></li>
+                            <li><a href="#">뷰어다운로드</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul><!-- link -->
+                        <ul class="sns">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-facebook" aria-label="페이스북"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-youtube" aria-label="유튜브"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-instagram" aria-label="인스타그램"></i>
+                                </a>
+                            </li>
+                        </ul><!-- sns -->
+
+                    </div><!-- footer_top -->
+                    <div class="footer_bottom">
+                        <div class="b_left">
+                            <address>
+                                (우)48529 <span>부산광역시 남구 유엔평화로 63(대연동)</span> 전화 <span>051.610.7111</span> <br>
+                                <span>평일 08:30-18:30</span> 야간/공휴일 근무시간외는 당직실 전환
+                            </address>
+                            <div class="copy">
+                                Copyright &copy; Busan Metropolitan City. All rights reserved.
+                            </div><!-- copy -->
+                        </div><!-- b_left -->
+                        <div class="footer_logo">
+                            <img src="images/common/footer_logo.svg" alt="부산박물관">
+                            <img src="images/common/footer_logo_bs.svg" alt="부산광역시로고">
+                        </div><!-- footer_logo -->
+
+                    </div><!-- footer_bottom -->
+                </div><!-- inner -->
+            </footer>
+        </div><!-- #fullpage -->
+
+
+        <div class="gotop">
+            <a href="#menu1">
+                <i class="bi bi-arrow-up-circle"></i>
+            </a>
+        </div><!-- gotop -->
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+
+
+
+        </script>
+
+
+
+</body>
+
+</html>
